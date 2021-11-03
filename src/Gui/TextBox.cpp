@@ -237,7 +237,7 @@ void TextBox::draw(sf::RenderTarget& target, sf::RenderStates states) const
     glDisable(GL_SCISSOR_TEST);
 
     // Show cursor if focused
-    if (isFocused())
+    if (m_box.getState() == State::StateFocused || m_box.getState() == State::StatePressed)
     {
         // Make it blink
         float timer = m_cursorTimer.getElapsedTime().asSeconds();
