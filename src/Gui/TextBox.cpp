@@ -23,7 +23,7 @@ TextBox::TextBox(float width):
 
     // Build cursor
     m_cursor.setPosition(offset, offset);
-    m_cursor.setSize(sf::Vector2f(float(Theme::textSize) / 20, Theme::getLineSpacing()));
+    m_cursor.setSize(sf::Vector2f(float(Theme::textSize) / 15, Theme::getLineSpacing()));
     m_cursor.setFillColor(Theme::input.textColor);
     setCursor(1);
 
