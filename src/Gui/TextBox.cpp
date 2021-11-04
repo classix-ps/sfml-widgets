@@ -23,7 +23,7 @@ TextBox::TextBox(float width):
 
     // Build cursor
     m_cursor.setPosition(offset, offset);
-    m_cursor.setSize(sf::Vector2f(1.f, Theme::getLineSpacing()));
+    m_cursor.setSize(sf::Vector2f(width / 200, Theme::getLineSpacing()));
     m_cursor.setFillColor(Theme::input.textColor);
     setCursor(0);
 
@@ -230,8 +230,8 @@ void TextBox::draw(sf::RenderTarget& target, sf::RenderStates states) const
 
     // Crop the text with GL Scissor
     glEnable(GL_SCISSOR_TEST);
-    sf::Vector2f pos = getAbsolutePosition();
-    glScissor(pos.x + Theme::borderSize, target.getSize().y - (pos.y + getSize().y), getSize().x, getSize().y);
+    //sf::Vector2f pos = getAbsolutePosition();
+    //glScissor(pos.x + Theme::borderSize, target.getSize().y - (pos.y + getSize().y), getSize().x, getSize().y);
     target.draw(m_text, states);
 
     glDisable(GL_SCISSOR_TEST);
