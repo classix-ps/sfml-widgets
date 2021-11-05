@@ -165,7 +165,7 @@ void Slider::onMousePressed(float x, float y)
 
 void Slider::onMouseMoved(float x, float y)
 {
-    if (getState() == StateFocused)
+    if (m_handle.getState() == State::StatePressed)
     {
         if (sf::Mouse::isButtonPressed(sf::Mouse::Left))
         {
