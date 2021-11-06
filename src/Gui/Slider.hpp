@@ -18,6 +18,7 @@ public:
     enum Type { Horizontal, Vertical };
 
     Slider(float length = 200, Type type = Horizontal);
+    Slider(float length, Type type, int size);
 
     int getStep() const;
 

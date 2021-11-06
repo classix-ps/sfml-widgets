@@ -50,6 +50,9 @@ const sf::Font& SpriteButton::getFont() const
     return *m_text.getFont();
 }
 
+State SpriteButton::getState() const {
+  return m_state;
+}
 
 void SpriteButton::setTextSize(size_t size)
 {
@@ -84,6 +87,8 @@ void SpriteButton::onStateChanged(State state)
         m_background.setTextureRect(sf::IntRect(0, size.y * 2, size.x, size.y));
         break;
     }
+
+    m_state = state;
 }
 
 

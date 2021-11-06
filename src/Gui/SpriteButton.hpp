@@ -20,6 +20,8 @@ public:
     void setFont(const sf::Font& font);
     const sf::Font& getFont() const;
 
+    State getState() const;
+
     void setTextSize(size_t size);
 
     void setTexture(const sf::Texture& texture);
@@ -39,6 +41,7 @@ private:
     sf::Text   m_text;
     sf::Sprite m_background;
     bool       m_pressed;
+    State m_state;
 };
 
 }
