@@ -70,8 +70,8 @@ void TextBox::setCursor(size_t index)
     {
         m_cursorPos = index;
 
-        float padding = Theme::borderSize + Theme::PADDING;
-        m_cursor.setPosition(m_text.findCharacterPos(index).x, padding);
+        float padding = Theme::borderSize + Theme::PADDING + (m_text.getCharacterSize() - 12) / 12.f;
+        m_cursor.setPosition(m_text.findCharacterPos(index).x, Theme::borderSize + Theme::PADDING);
         m_cursorTimer.restart();
 
         if (m_cursor.getPosition().x > getSize().x - padding)
@@ -230,8 +230,10 @@ void TextBox::draw(sf::RenderTarget& target, sf::RenderStates states) const
 
     // Crop the text with GL Scissor
     glEnable(GL_SCISSOR_TEST);
-    //sf::Vector2f pos = getAbsolutePosition();
+    sf::Vector2i topLeft = target.mapCoordsToPixel(getAbsolutePosition());
+    sf::Vector2i bottomRight = target.mapCoordsToPixel(getAbsolutePosition() + getSize());
     //glScissor(pos.x + Theme::borderSize, target.getSize().y - (pos.y + getSize().y), getSize().x, getSize().y);
+    glScissor(topLeft.x, 0, bottomRight.x - topLeft.x, target.getSize().y);
     target.draw(m_text, states);
 
     glDisable(GL_SCISSOR_TEST);
