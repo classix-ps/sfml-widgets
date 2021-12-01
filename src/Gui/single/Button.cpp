@@ -1,7 +1,7 @@
 #include "Button.hpp"
 #include "Theme.hpp"
 
-namespace gui
+namespace guiSingle
 {
 
 Button::Button(const sf::String& string)

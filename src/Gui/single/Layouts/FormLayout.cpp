@@ -2,7 +2,7 @@
 #include "../Theme.hpp"
 #include "../Label.hpp"
 
-namespace gui
+namespace guiSingle
 {
 
 FormLayout::FormLayout():
@@ -13,7 +13,7 @@ FormLayout::FormLayout():
 
 Widget* FormLayout::addRow(const sf::String& str, Widget* widget)
 {
-    gui::Label* label = new gui::Label(str);
+    guiSingle::Label* label = new guiSingle::Label(str);
     if (label->getSize().x > m_labelWidth)
     {
         m_labelWidth = label->getSize().x;

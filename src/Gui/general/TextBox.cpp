@@ -23,9 +23,9 @@ TextBox::TextBox(float width):
 
     // Build cursor
     m_cursor.setPosition(offset, offset);
-    m_cursor.setSize(sf::Vector2f(float(Theme::textSize) / 15, Theme::getLineSpacing()));
+    m_cursor.setSize(sf::Vector2f(1.f, Theme::getLineSpacing()));
     m_cursor.setFillColor(Theme::input.textColor);
-    setCursor(1);
+    setCursor(0);
 
     setSize(m_box.getSize());
 }
@@ -70,8 +70,8 @@ void TextBox::setCursor(size_t index)
     {
         m_cursorPos = index;
 
-        float padding = Theme::borderSize + Theme::PADDING + (m_text.getCharacterSize() - 12) / 12.f;
-        m_cursor.setPosition(m_text.findCharacterPos(index).x, Theme::borderSize + Theme::PADDING);
+        float padding = Theme::borderSize + Theme::PADDING;
+        m_cursor.setPosition(m_text.findCharacterPos(index).x, padding);
         m_cursorTimer.restart();
 
         if (m_cursor.getPosition().x > getSize().x - padding)
@@ -230,16 +230,14 @@ void TextBox::draw(sf::RenderTarget& target, sf::RenderStates states) const
 
     // Crop the text with GL Scissor
     glEnable(GL_SCISSOR_TEST);
-    sf::Vector2i topLeft = target.mapCoordsToPixel(getAbsolutePosition());
-    sf::Vector2i bottomRight = target.mapCoordsToPixel(getAbsolutePosition() + getSize());
-    //glScissor(pos.x + Theme::borderSize, target.getSize().y - (pos.y + getSize().y), getSize().x, getSize().y);
-    glScissor(topLeft.x, 0, bottomRight.x - topLeft.x, target.getSize().y);
+    sf::Vector2f pos = getAbsolutePosition();
+    glScissor(pos.x + Theme::borderSize, target.getSize().y - (pos.y + getSize().y), getSize().x, getSize().y);
     target.draw(m_text, states);
 
     glDisable(GL_SCISSOR_TEST);
 
     // Show cursor if focused
-    if (m_box.getState() == State::StateFocused || m_box.getState() == State::StatePressed)
+    if (isFocused())
     {
         // Make it blink
         float timer = m_cursorTimer.getElapsedTime().asSeconds();

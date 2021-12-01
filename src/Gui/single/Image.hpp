@@ -1,9 +1,9 @@
-#ifndef GUI_IMAGE_HPP
-#define GUI_IMAGE_HPP
+#ifndef GUI_IMAGE_SINGLE_HPP
+#define GUI_IMAGE_SINGLE_HPP
 
 #include "Widget.hpp"
 
-namespace gui
+namespace guiSingle
 {
 
 /**
@@ -29,4 +29,4 @@ private:
 
 }
 
-#endif // GUI_IMAGE_HPP
+#endif // GUI_IMAGE_SINGLE_HPP

@@ -1,9 +1,9 @@
-#ifndef GUI_SPRITEBUTTON_HPP
-#define GUI_SPRITEBUTTON_HPP
+#ifndef GUI_SPRITEBUTTON_SINGLE_HPP
+#define GUI_SPRITEBUTTON_SINGLE_HPP
 
 #include "Widget.hpp"
 
-namespace gui
+namespace guiSingle
 {
 
 /**
@@ -46,4 +46,4 @@ private:
 
 }
 
-#endif // GUI_SPRITEBUTTON_HPP
+#endif // GUI_SPRITEBUTTON_SINGLE_HPP

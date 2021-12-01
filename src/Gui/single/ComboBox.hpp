@@ -1,9 +1,9 @@
-#ifndef GUI_COMBOBOX_HPP
-#define GUI_COMBOBOX_HPP
+#ifndef GUI_COMBOBOX_SINGLE_HPP
+#define GUI_COMBOBOX_SINGLE_HPP
 
 #include "Widget.hpp"
 
-namespace gui
+namespace guiSingle
 {
 
 /**
@@ -28,4 +28,4 @@ private:
 
 #include "ComboBox.inl"
 
-#endif // GUI_COMBOBOX_HPP
+#endif // GUI_COMBOBOX_SINGLE_HPP

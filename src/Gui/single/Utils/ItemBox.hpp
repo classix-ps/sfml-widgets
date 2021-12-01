@@ -1,9 +1,9 @@
-#ifndef GUI_ITEMBOX_HPP
-#define GUI_ITEMBOX_HPP
+#ifndef GUI_ITEMBOX_SINGLE_HPP
+#define GUI_ITEMBOX_SINGLE_HPP
 
 #include "Box.hpp"
 
-namespace gui
+namespace guiSingle
 {
 
 /**
@@ -33,4 +33,4 @@ private:
 
 #include "ItemBox.inl"
 
-#endif // GUI_ITEMBOX_HPP
+#endif // GUI_ITEMBOX_SINGLE_HPP

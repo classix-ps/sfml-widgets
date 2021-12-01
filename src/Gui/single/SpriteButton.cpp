@@ -1,7 +1,7 @@
 #include "SpriteButton.hpp"
 #include "Theme.hpp"
 
-namespace gui
+namespace guiSingle
 {
 
 SpriteButton::SpriteButton(const sf::Texture& texture, const sf::String& string):

@@ -1,5 +1,5 @@
 
-namespace gui
+namespace guiSingle
 {
 
 template <class T>

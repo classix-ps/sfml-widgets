@@ -1,5 +1,5 @@
-#ifndef GUI_GUI_HPP
-#define GUI_GUI_HPP
+#ifndef GUI_GUI_SINGLE_HPP
+#define GUI_GUI_SINGLE_HPP
 
 // Widgets
 #include "Button.hpp"
@@ -18,4 +18,4 @@
 #include "Layouts/HBoxLayout.hpp"
 #include "Layouts/VBoxLayout.hpp"
 
-#endif // GUI_GUI_HPP
+#endif // GUI_GUI_SINGLE_HPP

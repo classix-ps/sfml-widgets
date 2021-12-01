@@ -1,6 +1,6 @@
 #include "Theme.hpp"
 
-namespace gui
+namespace guiSingle
 {
 
 size_t    Theme::textSize = 12;

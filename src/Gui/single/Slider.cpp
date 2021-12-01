@@ -1,7 +1,7 @@
 #include "Slider.hpp"
 #include "Theme.hpp"
 
-namespace gui
+namespace guiSingle
 {
 
 Slider::Slider(float length, Type type):

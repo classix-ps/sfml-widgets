@@ -1,7 +1,7 @@
 #include "ProgressBar.hpp"
 #include "Theme.hpp"
 
-namespace gui
+namespace guiSingle
 {
 
 ProgressBar::ProgressBar(float width):

@@ -3,7 +3,7 @@
 #include "Layouts/Layout.hpp"
 #include <cmath>
 
-namespace gui
+namespace guiSingle
 {
 
 Widget::Widget():

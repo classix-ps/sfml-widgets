@@ -142,10 +142,6 @@ bool Box::containsPoint(float x, float y) const
         && y <= m_background[2].position.y; // Bottom*/
 }
 
-State Box::getState() const {
-  return m_state;
-}
-
 // Visual properties -----------------------------------------------------------
 
 void Box::applyState(State state)

@@ -5,7 +5,7 @@
 
 #define BLINK_PERIOD 1.f
 
-namespace gui
+namespace guiSingle
 {
 
 TextBox::TextBox(float width):

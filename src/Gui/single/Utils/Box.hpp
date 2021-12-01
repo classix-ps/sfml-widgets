@@ -1,10 +1,10 @@
-#ifndef GUI_BOX_HPP
-#define GUI_BOX_HPP
+#ifndef GUI_BOX_SINGLE_HPP
+#define GUI_BOX_SINGLE_HPP
 
 #include <SFML/Graphics.hpp>
 #include "../Widget.hpp"
 
-namespace gui
+namespace guiSingle
 {
 
 /**
@@ -103,4 +103,4 @@ private:
 }
 
 
-#endif // GUI_BOX_HPP
+#endif // GUI_BOX_SINGLE_HPP

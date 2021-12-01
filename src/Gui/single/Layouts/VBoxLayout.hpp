@@ -1,9 +1,9 @@
-#ifndef GUI_VBOXLAYOUT_HPP
-#define GUI_VBOXLAYOUT_HPP
+#ifndef GUI_VBOXLAYOUT_SINGLE_HPP
+#define GUI_VBOXLAYOUT_SINGLE_HPP
 
 #include "Layout.hpp"
 
-namespace gui
+namespace guiSingle
 {
 
 /**
@@ -17,4 +17,4 @@ private:
 
 }
 
-#endif // GUI_VBOXLAYOUT_HPP
+#endif // GUI_VBOXLAYOUT_SINGLE_HPP

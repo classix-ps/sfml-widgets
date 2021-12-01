@@ -1,9 +1,9 @@
-#ifndef GUI_LAYOUT_HPP
-#define GUI_LAYOUT_HPP
+#ifndef GUI_LAYOUT_SINGLE_HPP
+#define GUI_LAYOUT_SINGLE_HPP
 
 #include "../Widget.hpp"
 
-namespace gui
+namespace guiSingle
 {
 
 class Widget;
@@ -72,4 +72,4 @@ private:
 
 }
 
-#endif // GUI_LAYOUT_HPP
+#endif // GUI_LAYOUT_SINGLE_HPP

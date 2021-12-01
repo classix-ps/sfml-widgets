@@ -1,11 +1,11 @@
-#ifndef GUI_OPTIONSBOX_HPP
-#define GUI_OPTIONSBOX_HPP
+#ifndef GUI_OPTIONSBOX_SINGLE_HPP
+#define GUI_OPTIONSBOX_SINGLE_HPP
 
 #include "Widget.hpp"
 #include "Utils/Arrow.hpp"
 #include "Utils/ItemBox.hpp"
 
-namespace gui
+namespace guiSingle
 {
 
 /**
@@ -88,4 +88,4 @@ private:
 
 #include "OptionsBox.inl"
 
-#endif // GUI_OPTIONSBOX_HPP
+#endif // GUI_OPTIONSBOX_SINGLE_HPP

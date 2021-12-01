@@ -1,11 +1,11 @@
-#ifndef GUI_WIDGET_HPP
-#define GUI_WIDGET_HPP
+#ifndef GUI_WIDGET_SINGLE_HPP
+#define GUI_WIDGET_SINGLE_HPP
 
 #include <SFML/Graphics.hpp>
 #include <iostream>
 #include <functional>
 
-namespace gui
+namespace guiSingle
 {
 
 enum State
@@ -122,4 +122,4 @@ private:
 
 }
 
-#endif // GUI_WIDGET_HPP
+#endif // GUI_WIDGET_SINGLE_HPP

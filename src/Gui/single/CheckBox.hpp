@@ -1,11 +1,11 @@
-#ifndef GUI_CHECKBOX_HPP
-#define GUI_CHECKBOX_HPP
+#ifndef GUI_CHECKBOX_SINGLE_HPP
+#define GUI_CHECKBOX_SINGLE_HPP
 
 #include "Widget.hpp"
 #include "Utils/Box.hpp"
 #include "Utils/Cross.hpp"
 
-namespace gui
+namespace guiSingle
 {
 
 /**
@@ -37,4 +37,4 @@ private:
 
 }
 
-#endif // GUI_CHECKBOX_HPP
+#endif // GUI_CHECKBOX_SINGLE_HPP

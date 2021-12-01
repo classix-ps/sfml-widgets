@@ -1,10 +1,10 @@
-#ifndef GUI_SLIDER_HPP
-#define GUI_SLIDER_HPP
+#ifndef GUI_SLIDER_SINGLE_HPP
+#define GUI_SLIDER_SINGLE_HPP
 
 #include "Widget.hpp"
 #include "Utils/Box.hpp"
 
-namespace gui
+namespace guiSingle
 {
 
 /**
@@ -54,4 +54,4 @@ private:
 
 }
 
-#endif // GUI_SLIDER_HPP
+#endif // GUI_SLIDER_SINGLE_HPP

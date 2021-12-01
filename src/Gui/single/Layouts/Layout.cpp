@@ -5,7 +5,7 @@
 #include "../Button.hpp"
 #include "../Label.hpp"
 
-namespace gui
+namespace guiSingle
 {
 
 Layout::Layout():

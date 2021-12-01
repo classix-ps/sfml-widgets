@@ -1,9 +1,9 @@
-#ifndef GUI_FORMLAYOUT_HPP
-#define GUI_FORMLAYOUT_HPP
+#ifndef GUI_FORMLAYOUT_SINGLE_HPP
+#define GUI_FORMLAYOUT_SINGLE_HPP
 
 #include "Layout.hpp"
 
-namespace gui
+namespace guiSingle
 {
 
 /**
@@ -29,4 +29,4 @@ private:
 
 }
 
-#endif // GUI_FORMLAYOUT_HPP
+#endif // GUI_FORMLAYOUT_SINGLE_HPP

@@ -1,9 +1,9 @@
-#ifndef GUI_HBOXLAYOUT_HPP
-#define GUI_HBOXLAYOUT_HPP
+#ifndef GUI_HBOXLAYOUT_SINGLE_HPP
+#define GUI_HBOXLAYOUT_SINGLE_HPP
 
 #include "Layout.hpp"
 
-namespace gui
+namespace guiSingle
 {
 
 /**
@@ -18,4 +18,4 @@ private:
 
 }
 
-#endif // GUI_HBOXLAYOUT_HPP
+#endif // GUI_HBOXLAYOUT_SINGLE_HPP

@@ -41,7 +41,7 @@ public:
      */
     size_t getCursor() const;
 
-//protected:
+protected:
     // Callbacks
     void onKeyPressed(const sf::Event::KeyEvent& key) override;
     void onMousePressed(float x, float y) override;

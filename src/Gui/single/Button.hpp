@@ -1,10 +1,10 @@
-#ifndef GUI_BUTTON_HPP
-#define GUI_BUTTON_HPP
+#ifndef GUI_BUTTON_SINGLE_HPP
+#define GUI_BUTTON_SINGLE_HPP
 
 #include "Widget.hpp"
 #include "Utils/ItemBox.hpp"
 
-namespace gui
+namespace guiSingle
 {
 
 /**
@@ -40,4 +40,4 @@ private:
 
 }
 
-#endif // GUI_BUTTON_HPP
+#endif // GUI_BUTTON_SINGLE_HPP

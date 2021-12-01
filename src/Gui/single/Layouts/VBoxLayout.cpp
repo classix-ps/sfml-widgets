@@ -1,7 +1,7 @@
 #include "VBoxLayout.hpp"
 #include "../Theme.hpp"
 
-namespace gui
+namespace guiSingle
 {
 
 void VBoxLayout::recomputeGeometry()

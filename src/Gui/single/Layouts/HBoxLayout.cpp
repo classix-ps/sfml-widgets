@@ -1,7 +1,7 @@
 #include "HBoxLayout.hpp"
 #include "../Theme.hpp"
 
-namespace gui
+namespace guiSingle
 {
 
 void HBoxLayout::recomputeGeometry()

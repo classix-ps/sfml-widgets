@@ -2,7 +2,7 @@
 #include "../Theme.hpp"
 
 
-namespace gui
+namespace guiSingle
 {
 
 Box::Box(Type type):

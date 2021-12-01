@@ -1,13 +1,13 @@
-#ifndef GUI_MENU_HPP
-#define GUI_MENU_HPP
+#ifndef GUI_MENU_SINGLE_HPP
+#define GUI_MENU_SINGLE_HPP
 
 #include "Layouts/VBoxLayout.hpp"
 #include <SFML/Graphics.hpp>
 
-namespace gui
+namespace guiSingle
 {
 
-class Menu: public gui::VBoxLayout
+class Menu: public guiSingle::VBoxLayout
 {
 public:
     Menu(sf::RenderTarget& window);
@@ -32,4 +32,4 @@ private:
 
 }
 
-#endif // GUI_MENU_HPP
+#endif // GUI_MENU_SINGLE_HPP

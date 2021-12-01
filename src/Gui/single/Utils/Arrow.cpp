@@ -1,7 +1,7 @@
 #include "Arrow.hpp"
 #include "../Theme.hpp"
 
-namespace gui
+namespace guiSingle
 {
 
 Arrow::Arrow(Direction direction):

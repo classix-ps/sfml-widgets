@@ -1,5 +1,5 @@
-#ifndef GUI_THEME_HPP
-#define GUI_THEME_HPP
+#ifndef GUI_THEME_SINGLE_HPP
+#define GUI_THEME_SINGLE_HPP
 
 #include <map>
 #include <string>
@@ -9,7 +9,7 @@
 #include "Widget.hpp"
 #include "Utils/Box.hpp"
 
-namespace gui
+namespace guiSingle
 {
 
 class Theme
@@ -87,4 +87,4 @@ private:
 
 }
 
-#endif // GUI_THEME_HPP
+#endif // GUI_THEME_SINGLE_HPP

@@ -1,10 +1,10 @@
-#ifndef GUI_TEXTBOX_HPP
-#define GUI_TEXTBOX_HPP
+#ifndef GUI_TEXTBOX_SINGLE_HPP
+#define GUI_TEXTBOX_SINGLE_HPP
 
 #include "Widget.hpp"
 #include "Utils/Box.hpp"
 
-namespace gui
+namespace guiSingle
 {
 
 /**
@@ -61,4 +61,4 @@ private:
 
 }
 
-#endif // GUI_TEXTBOX_HPP
+#endif // GUI_TEXTBOX_SINGLE_HPP

@@ -1,6 +1,6 @@
 #include "Image.hpp"
 
-namespace gui
+namespace guiSingle
 {
 
 Image::Image():

@@ -48,8 +48,6 @@ public:
      */
     bool containsPoint(float x, float y) const;
 
-    State getState() const;
-
     void applyState(State state);
 
     template <class T>

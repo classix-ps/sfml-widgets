@@ -1,10 +1,10 @@
-#ifndef GUI_LABEL_HPP
-#define GUI_LABEL_HPP
+#ifndef GUI_LABEL_SINGLE_HPP
+#define GUI_LABEL_SINGLE_HPP
 
 #include "Widget.hpp"
 
 
-namespace gui
+namespace guiSingle
 {
 
 /**
@@ -41,4 +41,4 @@ private:
 
 }
 
-#endif // GUI_LABEL_HPP
+#endif // GUI_LABEL_SINGLE_HPP

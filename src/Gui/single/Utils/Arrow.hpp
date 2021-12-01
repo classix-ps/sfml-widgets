@@ -1,9 +1,9 @@
-#ifndef GUI_ARROW_HPP
-#define GUI_ARROW_HPP
+#ifndef GUI_ARROW_SINGLE_HPP
+#define GUI_ARROW_SINGLE_HPP
 
 #include <SFML/Graphics.hpp>
 
-namespace gui
+namespace guiSingle
 {
 
 class Arrow: public sf::Drawable
@@ -31,4 +31,4 @@ private:
 
 }
 
-#endif // GUI_ARROW_HPP
+#endif // GUI_ARROW_SINGLE_HPP

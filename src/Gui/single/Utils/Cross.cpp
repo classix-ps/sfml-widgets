@@ -1,7 +1,7 @@
 #include "Cross.hpp"
 #include "../Theme.hpp"
 
-namespace gui
+namespace guiSingle
 {
 
 Cross::Cross()

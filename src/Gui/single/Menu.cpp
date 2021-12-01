@@ -1,7 +1,7 @@
 #include "Menu.hpp"
 #include "Theme.hpp"
 
-namespace gui
+namespace guiSingle
 {
 
 Menu::Menu(sf::RenderTarget& window):

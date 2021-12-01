@@ -1,9 +1,9 @@
-#ifndef GUI_CROSS_HPP
-#define GUI_CROSS_HPP
+#ifndef GUI_CROSS_SINGLE_HPP
+#define GUI_CROSS_SINGLE_HPP
 
 #include <SFML/Graphics.hpp>
 
-namespace gui
+namespace guiSingle
 {
 
 class Cross: public sf::Drawable
@@ -28,4 +28,4 @@ private:
 
 }
 
-#endif // GUI_CROSS_HPP
+#endif // GUI_CROSS_SINGLE_HPP

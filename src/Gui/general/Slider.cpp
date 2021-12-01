@@ -52,54 +52,6 @@ Slider::Slider(float length, Type type):
     updateHandlePosition();
 }
 
-Slider::Slider(float length, Type type, int size) :
-  m_type(type),
-  m_step(10),
-  m_value(0),
-  m_box(Box::Input)
-{
-  int handleHeight = size;
-  int handleWidth = handleHeight / 2;
-  int boxHeight = Theme::borderSize * 3;
-  int boxOffset = (handleHeight - boxHeight) / 2;
-
-  if (type == Horizontal)
-  {
-    m_box.setSize(length, boxHeight);
-    m_box.setPosition(0, boxOffset);
-    m_handle.setSize(handleWidth, handleHeight);
-
-    setSize(length, handleHeight);
-
-    for (int i = 0; i < 4; ++i)
-    {
-      m_progression[i].color = Theme::windowBgColor;
-      m_progression[i].position.x = m_box.getPosition().x + Theme::borderSize;
-      m_progression[i].position.y = m_box.getPosition().y + Theme::borderSize;
-    }
-    m_progression[2].position.y += m_box.getSize().y - Theme::borderSize * 2;
-    m_progression[3].position.y += m_box.getSize().y - Theme::borderSize * 2;
-  }
-  else
-  {
-    m_box.setSize(boxHeight, length);
-    m_box.setPosition(boxOffset, 0);
-    m_handle.setSize(handleHeight, handleWidth);
-
-    setSize(handleHeight, length);
-
-    for (int i = 0; i < 4; ++i)
-    {
-      m_progression[i].color = Theme::windowBgColor;
-      m_progression[i].position.x = m_box.getPosition().x + Theme::borderSize;
-      m_progression[i].position.y = m_box.getSize().y - Theme::borderSize;
-    }
-    m_progression[1].position.x += m_box.getSize().x - Theme::borderSize * 2;
-    m_progression[2].position.x += m_box.getSize().x - Theme::borderSize * 2;
-  }
-  updateHandlePosition();
-}
-
 
 int Slider::getStep() const
 {
@@ -213,7 +165,7 @@ void Slider::onMousePressed(float x, float y)
 
 void Slider::onMouseMoved(float x, float y)
 {
-    if (m_handle.getState() == State::StatePressed)
+    if (getState() == StateFocused)
     {
         if (sf::Mouse::isButtonPressed(sf::Mouse::Left))
         {

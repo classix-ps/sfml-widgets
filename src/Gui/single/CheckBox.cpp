@@ -1,7 +1,7 @@
 #include "CheckBox.hpp"
 #include "Theme.hpp"
 
-namespace gui
+namespace guiSingle
 {
 
 CheckBox::CheckBox(bool checked):

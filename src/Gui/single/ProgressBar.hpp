@@ -1,10 +1,10 @@
-#ifndef GUI_PROGRESS_BAR_HPP
-#define GUI_PROGRESS_BAR_HPP
+#ifndef GUI_PROGRESS_BAR_SINGLE_HPP
+#define GUI_PROGRESS_BAR_SINGLE_HPP
 
 #include "Widget.hpp"
 #include "Utils/Box.hpp"
 
-namespace gui
+namespace guiSingle
 {
 
 /**
@@ -31,4 +31,4 @@ private:
 
 }
 
-#endif // GUI_PROGRESS_BAR_HPP
+#endif // GUI_PROGRESS_BAR_SINGLE_HPP

@@ -1,7 +1,7 @@
 #include "Label.hpp"
 #include "Theme.hpp"
 
-namespace gui
+namespace guiSingle
 {
 
 Label::Label(const sf::String& string)
